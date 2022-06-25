@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:ital,wght@0,400;0,500;0,700;1,600&family=Roboto:ital@1&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+
+.notes {
+    display: flex;
+}
+
+.saved-notes {
+    width: 20vw;
+    height: 100vh;
+    max-width: 300px;
+}
+
+.btn-div {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    height: 50px;
+}
+
+.btn {
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    border: none;
+    background-color: green;
+    color: white;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 700;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.btn:hover {
+    transition: ease-out;
+    transform: scale(1.01);
+}
+
+.left-notes {
+    margin: 20px 10px;
+    text-align: justify;
+    border: none;
+    border-radius: 5px;
+    padding: 1px 2px 15px 15px;
+}
+
+.left-notes-selected {
+    background-color: rgba(0,0,0,0.08);
+}
+
+.left-notes > h4 {
+    margin-top: 5px;
+}
+
+.left-notes > p {
+   margin-top: 0px;
+    font-size: 0.8em;
+    font-weight: 700;
+}
+
+.left-notes:hover {
+    transition: ease-out;
+    transform: scale(1.04);
+    cursor: pointer;
+}
+
+.date {
+    margin-left: 0px;
+    font-style: italic;
+    font-weight: 100;
+    color: rgba(0,0,0,0.5);
+    font-size: 0.9em;
+}
+
+.vl {
+    border-left: 3px solid rgba(0,0,0,0.1);
+    height: 100vh;
+}
+
+.note-pad {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 30px;
+    text-align: justify;
+    border: 1px solid black;
+}
+
+.notes-title {
+    margin: 20px;
+    height: 40px;
+    font-size: 25px;
+    font-weight: 700;
+    border: none;
+    background-color: transparent;
+    color: black;
+}
+
+::placeholder {
+    color: black;
+}
+
+.notes-title:focus {
+    outline: none;
+}
+.notes-body {
+    margin: 20px;
+    border: none;
+    text-align: justify;
+    resize: none;
+    font-size: 18px;
+    height: 600px;
+    text-align: left;
+}
+.notes-body:focus {
+    outline: none;
+    content: none;
+}
