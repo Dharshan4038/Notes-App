@@ -1,0 +1,89 @@
+.details-container {
+  height: 100vh;
+  background-color: white;
+}
+
+.frm {
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  width: 600px;
+  height: 80vh;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.field {
+  padding-top: 25px;
+  font-size: 18px;
+  margin: 0 25px;
+}
+
+.label {
+  font-weight: 600;
+}
+
+.input {
+  background-color: whitesmoke;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  width: 100%;
+  height: 35px;
+  margin-top: 10px;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.control {
+  margin-top: 10px;
+}
+
+.textarea {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 16px;
+  padding: 10px;
+  background-color: whitesmoke;
+  resize: none;
+}
+
+.btns {
+  margin-top: 15px;
+  float: right;
+  margin-right: 35px;
+}
+
+.d-btn {
+  width: 70px;
+  height: 35px;
+  margin-left: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+
+.cbtn {
+  background-color: crimson;
+}
+
+.sbtn {
+  background-color: green;
+}
+
+.d-btn:hover {
+  transform: scale(1.05);
+}
+
+.tit {
+  font-size: 14px;
+  color: red;
+}

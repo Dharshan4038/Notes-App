@@ -1,0 +1,13 @@
+<div class="note-card-container">
+    <mat-card>
+      <a [routerLink]="link" class="lnk" >
+          <h2 class="note-card-title">{{ title }}</h2>
+          <div class="note-card-body">
+            <p id="text">{{ body != undefined ? body.length > 60 ? (body.substring(0,60)+"..."): body : "" }}</p>
+          </div>
+      </a>
+      <div class="x-btn" (click)="onCloseBtn()" ><mat-icon>close</mat-icon></div>
+   </mat-card>
+
+
+</div>

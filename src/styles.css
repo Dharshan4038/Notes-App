@@ -1,1 +1,144 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body {
+  font-size: 18px;
+  height: 100%;
+  overflow: hidden;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-toolbar-single-row{
+  background: linear-gradient(to right,pink,blue) ;
+  height: 5vh;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.mat-drawer-inner-container {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body .mat-drawer-inner-container{
+  width: 350px;
+  padding-bottom: 50px;
+}
+
+.sidenav {
+  height: 100%;
+}
+
+.mat-list-base {
+  width: 90%;
+}
+
+.inp-container {
+  position: relative;
+}
+
+.inp {
+  color: black;
+  height: 30px;
+  width: 90%;
+  padding: 15px 30px;
+  margin: 0 15px;
+  outline: none;
+  font-weight: 700;
+}
+
+.icn {
+  position: absolute;
+  color: black;
+  margin: 5px 20px;
+}
+
+.mat-sidenav-content {
+  background: white;
+}
+
+.btn {
+  background: linear-gradient(to right,red,blue);
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  margin: 15px 15px;
+  height: 45px;
+  width: 90%;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: scale(1.02);
+}
+
+/* Card Desing */
+
+.note-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mat-card {
+  background-color: white;
+  width: 300px;
+}
+
+body .mat-card {
+  padding: 3px 10px;
+  color: purple;
+  margin-top: 15px;
+}
+
+body .mat-card:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+.x-btn {
+  position: absolute;
+  top: 5px;
+  right: 12px;
+  height: 25px;
+  width: 25px;
+  background-color: whitesmoke;
+  color: red;
+  border-radius: 4px;
+  opacity: 0;
+}
+
+.x-btn:hover {
+  background-color: red;
+  color: white;
+}
+
+.x-btn:active {
+  background-color: whitesmoke;
+  color: crimson;
+}
+
+
+body .mat-card:hover .x-btn {
+  opacity: 1;
+}
+
+.note-card-body {
+  position: relative;
+  /* Max height before truncated */
+  max-height: 80px;
+  overflow: hidden;
+}
+
+.mat-drawer-content {
+  color: black;
+}

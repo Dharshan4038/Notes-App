@@ -1,0 +1,22 @@
+<div class="details-container">
+    <form class="frm" #noteForm = "ngForm" (submit)="onSubmit(noteForm)" >
+        <div class="field">
+            <label class="label">Title:</label><br>
+            <input type="text" id="title" name="title" minlength="4" [(ngModel)]="note.title" class="input" #title = "ngModel" required />
+            <div *ngIf="title.invalid && (title.dirty || title.touched)" class="alert"></div>
+            <div *ngIf="title.errors?.['required']" class="tit" >*Title is required.</div>
+            <div *ngIf="title.errors?.['minlength']" class="tit">*name must be at least 4 characters long.</div>
+        </div>
+        <div class="field">
+            <label class="label">Body:</label>
+            <div class="control">
+              <textarea rows="20" name="body" [ngModel] = "note.body" class="textarea"></textarea>
+            </div>
+        </div>
+        <div class="btns">
+            <button class="d-btn cbtn" type="button" (click)="cancel()">cancel</button>
+            <button class="d-btn sbtn" type="submit" [disabled]= "noteForm.invalid" >Save</button>
+        </div>
+    </form>
+</div>
+

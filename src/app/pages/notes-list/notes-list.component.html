@@ -1,0 +1,10 @@
+<mat-sidenav-container class="sidenav">
+  <mat-sidenav mode="side" opened>
+      <mat-nav-list>
+        <button type="submit" class="btn" routerLink="new">Add Note</button>
+      </mat-nav-list>
+      <div class="notes-list">
+        <app-note-card *ngFor="let note of notes;index as i" [link]="$any(i)" (delete)="deleteNote(i)" [title]="note.title" [body]="note.body"></app-note-card>
+      </div>
+  </mat-sidenav>
+</mat-sidenav-container>
