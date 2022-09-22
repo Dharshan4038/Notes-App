@@ -1,2 +1,2 @@
-# Notes-App
-Notes-App built using Angular JS...
+# Angular Project ------ Notes App
+
